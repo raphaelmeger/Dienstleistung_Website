@@ -25,7 +25,7 @@ const mainServices = [
     desc: 'Unser wichtigster Service. Wir reinigen Treppenhäuser, Flure, Aufzüge und alle Gemeinschaftsflächen in Mehrfamilienhäusern, Bürogebäuden und Gewerbeobjekten – regelmäßig, dokumentiert und zuverlässig.',
     features: ['Wöchentlich oder 14-täglich', 'Fotodokumentation', 'Aufzüge & Gemeinschaftsflächen', 'Jahresvertrag oder monatlich kündbar'],
     href: '/leistungen/treppenhausreinigung',
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=80',
+    image: '/monica-sauro-cyhUa1j5_RE-unsplash.jpg',
     tag: 'Bestseller',
     icon: <Building2 size={24} />,
   },
