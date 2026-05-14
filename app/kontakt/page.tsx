@@ -25,6 +25,7 @@ export default function KontaktPage() {
   })
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value, type } = e.target
@@ -37,9 +38,20 @@ export default function KontaktPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
-    await new Promise((r) => setTimeout(r, 1200))
-    setLoading(false)
-    setSubmitted(true)
+    setError('')
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formState),
+      })
+      if (!res.ok) throw new Error()
+      setSubmitted(true)
+    } catch {
+      setError('Ihre Anfrage konnte nicht gesendet werden. Bitte rufen Sie uns direkt an.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -282,6 +294,9 @@ export default function KontaktPage() {
                       </label>
                     </div>
 
+                    {error && (
+                      <p className="text-red-500 text-sm text-center">{error}</p>
+                    )}
                     <button
                       type="submit"
                       disabled={loading || !formState.privacy}
