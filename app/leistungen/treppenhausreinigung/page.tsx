@@ -35,7 +35,7 @@ export default function TreppenhausreinigungPage() {
       <section className="relative min-h-[55vh] flex items-end overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1601629736795-3da639aa9f23?auto=format&fit=crop&w=1920&q=80"
+            src="/treppenhausreinigung-hero.jpg"
             alt="Professionelle Treppenhausreinigung Düsseldorf"
             fill
             className="object-cover"
