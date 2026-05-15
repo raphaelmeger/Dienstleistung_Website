@@ -275,6 +275,43 @@ export default function DatenschutzPage() {
                 Aufbewahrungsfristen – bleiben unberührt.
               </p>
 
+              <h3 className="text-base font-semibold text-navy-900 mt-5 mb-2">WhatsApp Business</h3>
+              <p>
+                Für die Kommunikation mit unseren Kunden nutzen wir den Dienst WhatsApp Business.
+                Anbieter ist die WhatsApp Ireland Limited, 4 Grand Canal Square, Grand Canal Harbour,
+                Dublin 2, Irland, ein Tochterunternehmen von Meta Platforms Inc.
+              </p>
+              <p className="mt-3">
+                Wenn Sie uns über WhatsApp kontaktieren, werden die von Ihnen übermittelten Daten
+                (insbesondere Ihre Telefonnummer, ggf. Ihr Name sowie der Inhalt Ihrer Nachricht)
+                auf den Servern von WhatsApp verarbeitet. WhatsApp übermittelt dabei Daten in die USA;
+                Meta Platforms Inc. ist nach dem EU-U.S. Data Privacy Framework zertifiziert
+                (Art.&nbsp;45 DSGVO).
+              </p>
+              <p className="mt-3">
+                Die Nutzung von WhatsApp zur Kundenkommunikation erfolgt auf Grundlage von
+                Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b DSGVO (Vertragserfüllung bzw. vorvertragliche
+                Maßnahmen) sowie Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;f DSGVO (berechtigtes Interesse
+                an einer effizienten und direkten Kundenkommunikation).
+              </p>
+              <p className="mt-3">
+                Bitte beachten Sie, dass WhatsApp Metadaten (z.&nbsp;B. Zeitpunkt und Häufigkeit
+                von Nachrichten) für eigene Zwecke verarbeiten kann. Weitere Informationen finden
+                Sie in der Datenschutzrichtlinie von WhatsApp:{' '}
+                <a
+                  href="https://www.whatsapp.com/legal/privacy-policy-eea"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold hover:underline break-all"
+                >
+                  https://www.whatsapp.com/legal/privacy-policy-eea
+                </a>
+              </p>
+              <p className="mt-3">
+                Die Nutzung von WhatsApp ist freiwillig. Alternativ können Sie uns jederzeit per
+                E-Mail oder Telefon kontaktieren.
+              </p>
+
               <h3 className="text-base font-semibold text-navy-900 mt-5 mb-2">E-Mail-Versand über Resend</h3>
               <p>
                 Für den Versand von Kontaktformular-Nachrichten nutzen wir den Dienst Resend von
@@ -384,7 +421,7 @@ export default function DatenschutzPage() {
 
             {/* Stand */}
             <div className="pt-4 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-              <p className="text-xs text-slate-400">Stand: Mai 2025</p>
+              <p className="text-xs text-slate-400">Stand: Mai 2026</p>
               <Link href="/" className="text-gold hover:text-gold-dark font-medium text-sm transition-colors">
                 ← Zurück zur Startseite
               </Link>

@@ -151,7 +151,7 @@ export default function ImpressumPage() {
 
             {/* Stand + Back */}
             <div className="pt-4 border-t border-slate-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-              <p className="text-xs text-slate-400">Stand: Mai 2025</p>
+              <p className="text-xs text-slate-400">Stand: Mai 2026</p>
               <Link href="/" className="text-gold hover:text-gold-dark font-medium text-sm transition-colors">
                 ← Zurück zur Startseite
               </Link>

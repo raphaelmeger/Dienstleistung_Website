@@ -193,7 +193,7 @@ export default function HomePage() {
             transition={{ duration: 0.6, delay: 0.6 }}
             className="flex flex-wrap items-center justify-center gap-3 mt-10"
           >
-            {['✓ Vollversichert', '✓ 250+ betreute Objekte', '✓ 4,9/5 Google Bewertung', '✓ 48h Reaktionszeit'].map((t) => (
+            {['✓ Vollversichert', '✓ 250+ betreute Objekte', '✓ 48h Reaktionszeit'].map((t) => (
               <span key={t} className="text-slate-300 text-sm font-medium bg-white/8 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/10">
                 {t}
               </span>
@@ -218,11 +218,10 @@ export default function HomePage() {
       {/* ── TRUST STRIP ── */}
       <section className="bg-navy-950 py-8 border-y border-white/5">
         <div className="container-max">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
             {[
               { num: 250, suffix: '+', label: 'Betreute Objekte' },
               { num: 10, suffix: '+', label: 'Jahre Erfahrung' },
-              { num: 4.9, suffix: '/5', label: 'Google Bewertung', decimals: 1 },
               { num: 48, suffix: 'h', label: 'Reaktionszeit' },
             ].map((stat) => (
               <div key={stat.label} className="flex flex-col items-center gap-1">
@@ -361,22 +360,6 @@ export default function HomePage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-tr from-navy-950/20 to-transparent" />
                 </div>
-                {/* Floating badge */}
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.4, duration: 0.5 }}
-                  className="absolute -bottom-5 -left-5 bg-white rounded-xl shadow-xl p-4 flex items-center gap-3 border border-slate-100"
-                >
-                  <div className="w-10 h-10 bg-gold/10 rounded-full flex items-center justify-center flex-shrink-0">
-                    <Star size={18} className="text-gold fill-gold" />
-                  </div>
-                  <div>
-                    <div className="font-bold text-navy-950 text-sm">4,9 / 5 Sterne</div>
-                    <div className="text-slate-500 text-xs">Google Bewertung</div>
-                  </div>
-                </motion.div>
                 <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}
                   whileInView={{ opacity: 1, scale: 1 }}
@@ -445,14 +428,6 @@ export default function HomePage() {
               <motion.h2 variants={fadeUp} className="section-title mb-4">
                 Das sagen unsere Kunden
               </motion.h2>
-              <motion.div variants={fadeUp} className="flex items-center justify-center gap-2 mt-2">
-                <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} size={18} className="text-gold fill-gold" />
-                  ))}
-                </div>
-                <span className="text-slate-600 text-sm font-medium">4,9/5 – Basierend auf Google Bewertungen</span>
-              </motion.div>
             </div>
 
             <div className="grid md:grid-cols-3 gap-6">
