@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://toni-hausmeisterservice.de/sitemap.xml
