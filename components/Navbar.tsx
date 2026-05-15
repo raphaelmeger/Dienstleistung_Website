@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Phone, MessageCircle, Menu, X, ChevronDown } from 'lucide-react'
+import { Phone, MessageCircle, Menu, X, ChevronDown, Key } from 'lucide-react'
 
 const navLinks = [
   { label: 'Startseite', href: '/' },
@@ -58,9 +58,9 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 flex-shrink-0 group">
-            <div className="w-9 h-9 bg-gold rounded-lg flex items-center justify-center flex-shrink-0
+            <div className="w-9 h-9 bg-slate-600 rounded-lg flex items-center justify-center flex-shrink-0
                             group-hover:scale-105 transition-transform duration-200">
-              <span className="text-navy-950 font-bold text-sm tracking-tight">TH</span>
+              <Key size={18} className="text-white" strokeWidth={2} />
             </div>
             <div className="hidden sm:block">
               <span className="text-white font-bold text-base leading-none block">Toni</span>
