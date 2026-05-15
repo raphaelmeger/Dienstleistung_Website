@@ -24,9 +24,9 @@ export default function ImpressumPage() {
               <h2 className="text-xl font-bold text-navy-950 mb-3">Angaben gemäß § 5 TMG</h2>
               <p className="leading-relaxed">
                 <strong>Toni Hausmeisterservice</strong><br />
-                Inhaber: Toni [Nachname]<br />
-                Musterstraße 1<br />
-                40211 Düsseldorf<br />
+                Inhaber: Ledion Rrahmani<br />
+                Eichendorffweg 54<br />
+                40699 Erkrath<br />
                 Deutschland
               </p>
             </div>
@@ -40,16 +40,19 @@ export default function ImpressumPage() {
             </div>
 
             <div>
-              <h2 className="text-xl font-bold text-navy-950 mb-3">Umsatzsteuer-ID</h2>
-              <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz: DE [Nummer]</p>
+              <h2 className="text-xl font-bold text-navy-950 mb-3">Umsatzsteuer</h2>
+              <p>
+                Das Unternehmen ist gemäß § 19 UStG nicht umsatzsteuerpflichtig (Kleingewerbe).
+                Es wird daher keine Umsatzsteuer-Identifikationsnummer ausgewiesen.
+              </p>
             </div>
 
             <div>
               <h2 className="text-xl font-bold text-navy-950 mb-3">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
               <p>
-                Toni [Nachname]<br />
-                Musterstraße 1<br />
-                40211 Düsseldorf
+                Ledion Rrahmani<br />
+                Eichendorffweg 54<br />
+                40699 Erkrath
               </p>
             </div>
 
