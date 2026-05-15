@@ -5,7 +5,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { motion, useInView } from 'framer-motion'
 import {
-  Phone, MessageCircle, CheckCircle, Star, ChevronRight, ArrowRight,
+  Phone, MessageCircle, CheckCircle, ChevronRight, ArrowRight,
   Building2, Leaf, Wrench, Shield, Clock, Award, Zap, Users, ChevronDown,
 } from 'lucide-react'
 import AnimatedCounter from '@/components/AnimatedCounter'
@@ -75,26 +75,6 @@ const usps = [
   { icon: <CheckCircle size={22} />, title: 'Digitale Qualitätskontrolle', desc: 'Fotodokumentation und regelmäßige Qualitätschecks für maximale Transparenz.' },
 ]
 
-const testimonials = [
-  {
-    name: 'Sabine Müller',
-    role: 'Hausverwaltung Schmidt GmbH, Düsseldorf',
-    text: 'Die Treppenhausreinigung in unseren vier Wohnanlagen läuft seit über zwei Jahren reibungslos. Immer pünktlich, immer top sauber. Klare Empfehlung für Hausverwaltungen!',
-    rating: 5,
-  },
-  {
-    name: 'Klaus Bergmann',
-    role: 'WEG Kaiserswerther Str. 12, Erkrath',
-    text: 'Hervorragende Gartenpflege für unsere Wohnanlage. Herr Toni und sein Team arbeiten professionell und sind sehr zuverlässig. Die Mieter sind begeistert.',
-    rating: 5,
-  },
-  {
-    name: 'Andrea Schumacher',
-    role: 'Immobilien Schumacher, Düsseldorf',
-    text: 'Schnelle Reaktionszeit, faire Preise und immer erreichbar. Wir betreuen gemeinsam 15 Objekte und ich würde Toni jederzeit weiterempfehlen.',
-    rating: 5,
-  },
-]
 
 const faqs = [
   {
@@ -419,41 +399,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ── */}
-      <section className="section-padding bg-white">
-        <div className="container-max">
-          <Section>
-            <div className="text-center mb-14">
-              <motion.span variants={fadeUp} className="section-label">Kundenstimmen</motion.span>
-              <motion.h2 variants={fadeUp} className="section-title mb-4">
-                Das sagen unsere Kunden
-              </motion.h2>
-            </div>
-
-            <div className="grid md:grid-cols-3 gap-6">
-              {testimonials.map((t, i) => (
-                <motion.div
-                  key={t.name}
-                  variants={fadeUp}
-                  custom={i}
-                  className="bg-site-bg border border-slate-100 rounded-2xl p-6 flex flex-col gap-4"
-                >
-                  <div className="flex">
-                    {[...Array(t.rating)].map((_, j) => (
-                      <Star key={j} size={15} className="text-gold fill-gold" />
-                    ))}
-                  </div>
-                  <p className="text-slate-700 text-sm leading-relaxed flex-1">„{t.text}"</p>
-                  <div className="border-t border-slate-100 pt-4">
-                    <div className="font-semibold text-navy-950 text-sm">{t.name}</div>
-                    <div className="text-slate-500 text-xs mt-0.5">{t.role}</div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-          </Section>
-        </div>
-      </section>
 
       {/* ── FAQ ── */}
       <section className="section-padding bg-site-bg">
