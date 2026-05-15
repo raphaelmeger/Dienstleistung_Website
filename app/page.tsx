@@ -226,7 +226,7 @@ export default function HomePage() {
             ].map((stat) => (
               <div key={stat.label} className="flex flex-col items-center gap-1">
                 <span className="text-3xl md:text-4xl font-bold text-gold leading-none">
-                  <AnimatedCounter end={stat.num} suffix={stat.suffix} decimals={stat.decimals ?? 0} />
+                  <AnimatedCounter end={stat.num} suffix={stat.suffix} decimals={0} />
                 </span>
                 <span className="text-slate-400 text-sm font-medium">{stat.label}</span>
               </div>
