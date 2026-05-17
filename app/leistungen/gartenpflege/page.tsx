@@ -48,7 +48,7 @@ export default function GartenpflegePage() {
       <section className="relative min-h-[55vh] flex items-end overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1558904541-efa843a96f01?auto=format&fit=crop&w=1920&q=80"
+            src="/gartenpflege-hero.jpg"
             alt="Professionelle Gartenpflege Düsseldorf"
             fill
             className="object-cover"

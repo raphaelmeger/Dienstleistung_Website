@@ -45,7 +45,7 @@ const services = [
     title: 'Treppenhausreinigung',
     desc: 'Professionelle Reinigung von Treppenhäusern, Aufzügen und Gemeinschaftsflächen – regelmäßig, zuverlässig und dokumentiert.',
     href: '/leistungen/treppenhausreinigung',
-    image: '/monica-sauro-cyhUa1j5_RE-unsplash.jpg',
+    image: '/treppenhausreinigung-karte.jpg',
     tag: 'Meist gebucht',
   },
   {
@@ -53,7 +53,7 @@ const services = [
     title: 'Garten- & Außenanlagenpflege',
     desc: 'Rasenmähen, Heckenschneiden, Grünflächenpflege und saisonale Betreuung Ihrer Außenanlagen.',
     href: '/leistungen/gartenpflege',
-    image: 'https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&q=80',
+    image: '/gartenpflege-karte.jpg',
     tag: null,
   },
   {
@@ -61,7 +61,7 @@ const services = [
     title: 'Weitere Dienstleistungen',
     desc: 'Winterdienst, Entrümpelung, Kleinreparaturen, Dachrinnenreinigung, Hochdruckreinigung und mehr.',
     href: '/leistungen',
-    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=800&q=80',
+    image: '/objektbetreuung.jpg',
     tag: null,
   },
 ]
@@ -104,7 +104,7 @@ export default function HomePage() {
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1920&q=80"
+            src="/hero-gebaeude.jpg"
             alt="Modernes Mehrfamilienhaus – Toni Hausmeisterservice"
             fill
             className="object-cover"
@@ -332,7 +332,7 @@ export default function HomePage() {
               >
                 <div className="relative rounded-2xl overflow-hidden shadow-2xl aspect-[4/3]">
                   <Image
-                    src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=900&q=80"
+                    src="/hausverwaltung-buero.jpg"
                     alt="Professionelle Objektbetreuung für Hausverwaltungen"
                     fill
                     className="object-cover"
@@ -456,7 +456,7 @@ export default function HomePage() {
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&w=1920&q=80"
+            src="/cta-hintergrund.jpg"
             alt="Jetzt Angebot anfragen"
             fill
             className="object-cover"

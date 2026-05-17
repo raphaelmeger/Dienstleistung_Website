@@ -63,7 +63,7 @@ export default function UeberUnsPage() {
             >
               <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=900&q=80"
+                  src="/team-ueberuns.jpg"
                   alt="Toni Hausmeisterservice Team"
                   fill
                   className="object-cover"
@@ -206,7 +206,7 @@ export default function UeberUnsPage() {
               className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-xl"
             >
               <Image
-                src="https://images.unsplash.com/photo-1486325212027-8081e485255e?auto=format&fit=crop&w=900&q=80"
+                src="/objektbetreuung.jpg"
                 alt="Professionelle Objektbetreuung für Hausverwaltungen"
                 fill
                 className="object-cover"
