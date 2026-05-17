@@ -21,7 +21,7 @@ const services = [
 
 export default function KontaktPage() {
   const [formState, setFormState] = useState({
-    name: '', company: '', email: '', phone: '', service: '', objects: '', message: '', privacy: false,
+    name: '', company: '', email: '', phone: '', service: '', objects: '', message: '',
   })
   const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
@@ -279,27 +279,22 @@ export default function KontaktPage() {
                       />
                     </div>
 
-                    <div className="flex items-start gap-3">
-                      <input
-                        id="privacy" name="privacy" type="checkbox" required
-                        checked={formState.privacy}
-                        onChange={handleChange}
-                        className="mt-1 w-4 h-4 accent-gold cursor-pointer flex-shrink-0"
-                      />
-                      <label htmlFor="privacy" className="text-xs text-slate-500 leading-relaxed cursor-pointer">
-                        Ich habe die{' '}
-                        <Link href="/datenschutz" className="text-gold hover:underline">Datenschutzerklärung</Link>
-                        {' '}gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu.{' '}
-                        <span className="text-gold" aria-hidden>*</span>
-                      </label>
-                    </div>
+                    <p className="text-xs text-slate-400 leading-relaxed">
+                      Mit dem Absenden dieser Anfrage werden Ihre Angaben zur Bearbeitung Ihrer
+                      Anfrage verarbeitet. Rechtsgrundlage ist Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;b
+                      und f DSGVO. Weitere Informationen entnehmen Sie unserer{' '}
+                      <Link href="/datenschutz" className="text-gold hover:underline">
+                        Datenschutzerklärung
+                      </Link>
+                      .
+                    </p>
 
                     {error && (
                       <p className="text-red-500 text-sm text-center">{error}</p>
                     )}
                     <button
                       type="submit"
-                      disabled={loading || !formState.privacy}
+                      disabled={loading}
                       className="btn-primary w-full justify-center py-4 text-base disabled:opacity-60 disabled:cursor-not-allowed"
                     >
                       {loading ? (

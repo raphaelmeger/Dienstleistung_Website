@@ -263,15 +263,15 @@ export default function DatenschutzPage() {
                 zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist.
                 In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse
                 an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art.&nbsp;6 Abs.&nbsp;1
-                lit.&nbsp;f DSGVO) oder auf Ihrer Einwilligung (Art.&nbsp;6 Abs.&nbsp;1 lit.&nbsp;a
-                DSGVO), sofern diese abgefragt wurde.
+                lit.&nbsp;f DSGVO).
               </p>
               <p className="mt-3">
-                Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns
-                zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der
-                Zweck für die Datenspeicherung entfällt (z.&nbsp;B. nach abgeschlossener Bearbeitung
-                Ihrer Anfrage). Zwingende gesetzliche Bestimmungen – insbesondere
-                Aufbewahrungsfristen – bleiben unberührt.
+                Die von Ihnen im Kontaktformular eingegebenen Daten werden in der Regel spätestens
+                sechs Monate nach abgeschlossener Bearbeitung Ihrer Anfrage gelöscht. Sofern es
+                zu einem Vertragsschluss kommt, unterliegen die Daten den gesetzlichen
+                Aufbewahrungsfristen (§&nbsp;257 HGB, §&nbsp;147 AO) und werden frühestens nach
+                Ablauf dieser Fristen gelöscht. Sie können jederzeit die Löschung Ihrer Daten
+                verlangen, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.
               </p>
 
               <h3 className="text-base font-semibold text-navy-900 mt-5 mb-2">WhatsApp Business</h3>
@@ -294,8 +294,14 @@ export default function DatenschutzPage() {
                 an einer effizienten und direkten Kundenkommunikation).
               </p>
               <p className="mt-3">
-                Bitte beachten Sie, dass WhatsApp Metadaten (z.&nbsp;B. Zeitpunkt und Häufigkeit
-                von Nachrichten) für eigene Zwecke verarbeiten kann. Weitere Informationen finden
+                Bitte beachten Sie, dass WhatsApp Business auf das Telefonbuch des Betreibers
+                zugreift. Dabei werden Telefonnummern von Kontakten an die Server von Meta
+                übertragen. Der Betreiber hat sichergestellt, dass nur Kontakte gespeichert sind,
+                bei denen eine entsprechende Rechtsgrundlage vorliegt.
+              </p>
+              <p className="mt-3">
+                Bitte beachten Sie außerdem, dass WhatsApp Metadaten (z.&nbsp;B. Zeitpunkt und
+                Häufigkeit von Nachrichten) für eigene Zwecke verarbeiten kann. Weitere Informationen finden
                 Sie in der Datenschutzrichtlinie von WhatsApp:{' '}
                 <a
                   href="https://www.whatsapp.com/legal/privacy-policy-eea"
