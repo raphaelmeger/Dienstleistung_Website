@@ -48,9 +48,8 @@ export default function DatenschutzPage() {
               <p className="mt-3">
                 <strong>Wofür nutzen wir Ihre Daten?</strong><br />
                 Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu
-                gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet
-                werden. Wenn Sie über die Website eine Anfrage stellen, verarbeiten wir Ihre Daten
-                zur Bearbeitung Ihrer Anfrage.
+                gewährleisten. Wenn Sie über die Website eine Anfrage stellen, verarbeiten wir Ihre
+                Daten zur Bearbeitung Ihrer Anfrage.
               </p>
               <p className="mt-3">
                 <strong>Welche Rechte haben Sie bezüglich Ihrer Daten?</strong><br />
@@ -240,7 +239,7 @@ export default function DatenschutzPage() {
                 <li>Referrer URL</li>
                 <li>Hostname des zugreifenden Rechners</li>
                 <li>Uhrzeit der Serveranfrage</li>
-                <li>IP-Adresse (anonymisiert/gekürzt)</li>
+                <li>IP-Adresse</li>
               </ul>
               <p className="mt-3">
                 Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.
